@@ -20,6 +20,12 @@ def month_days(month, leap_year):
 
 name = input("input your name: ")
 age = input("input your age: ")
+
+login_name = name;
+login_age = age;
+
+print('login' + login_name + 'age' + login_age);
+
 localtime = time.localtime(time.time())
 
 year = int(age)
