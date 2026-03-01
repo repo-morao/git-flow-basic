@@ -1,12 +1,13 @@
 import time
 from calendar import isleap
 
+#comment1
 def judge_leap_year(year):
     if isleap(year):
         return True
     else:
         return False
-
+#comment2
 def month_days(month, leap_year):
     if month in [1, 3, 5, 7, 8, 10, 12]:
         return 31
@@ -28,6 +29,7 @@ day = 0
 begin_year = int(localtime.tm_year) - year
 end_year = begin_year + year
 
+#comment3
 for y in range(begin_year, end_year):
     if (judge_leap_year(y)):
         day = day + 366
@@ -35,6 +37,7 @@ for y in range(begin_year, end_year):
         day = day + 365
 
 leap_year = judge_leap_year(localtime.tm_year)
+#comment4
 for m in range(1, localtime.tm_mon):
     day = day + month_days(m, leap_year)
 
